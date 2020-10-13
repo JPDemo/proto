@@ -28,14 +28,18 @@ service GreetingService {
   // Given a stream of names, returns a stream of greetings
   // [request-channel]
   rpc Greetings(stream GreetingRequest) returns (stream GreetingResponse);
+  // Given name, returns a greeting with name
+  // [fire & forget]
+  rpc LogGreeting(GreetingRequest) returns (google.protobuf.Empty);
+}
+
+// GreetingServices is the greeting services
+service RandomGreetingService {
   // Return stream of random greetings
   // [request-stream]
   rpc RandomGreetings(RandomGreetingRequest) returns (stream GreetingResponse);
   // Return stream of random greetings
   // [request-response]
   rpc RandomGreeting(RandomGreetingRequest) returns (GreetingResponse);
-  // Given name, returns a greeting with name
-  // [fire & forget]
-  rpc LogGreeting(GreetingRequest) returns (google.protobuf.Empty);
 
 }
