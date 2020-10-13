@@ -36,6 +36,6 @@ service GreetingService {
   rpc RandomGreeting(RandomGreetingRequest) returns (GreetingResponse);
   // Given name, returns a greeting with name
   // [fire & forget]
-  rpc GreetingNoResponse(GreetingRequest) returns (google.protobuf.Empty);
+  rpc LogGreeting(GreetingRequest) returns (google.protobuf.Empty);
 
 }
