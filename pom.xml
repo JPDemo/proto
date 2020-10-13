@@ -4,7 +4,7 @@
 
     <groupId>jpdemo</groupId>
     <artifactId>proto</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
