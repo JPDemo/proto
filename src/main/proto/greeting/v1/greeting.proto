@@ -19,6 +19,20 @@ message GreetingResponse {
   string greeting = 1;
 }
 
+message GreetingSetup{
+
+  enum LocaleType {
+    LOCALE_INVALID = 0;
+    LOCALE_UNSET = 1;
+    LOCALE_EN = 2;
+    LOCALE_ES = 3;
+    LOCALE_DE = 4;
+  }
+
+    LocaleType locale = 1;
+
+}
+
 
 // GreetingServices is the greeting services
 service GreetingService {
