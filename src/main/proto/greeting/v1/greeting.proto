@@ -30,7 +30,9 @@ message GreetingSetup{
     LOCALE_DE = 4;
   }
 
-    LocaleType locale = 1;
+  // Greeting locale
+  LocaleType locale = 1;
+  // Setup config timestamp. Useful to demo value set once at setup and then can be accessed anytime
   google.protobuf.Timestamp initiated = 2;
 
 }
