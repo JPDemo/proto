@@ -7,6 +7,11 @@
       <option name="url" value="https://maven.pkg.github.com/jfinance" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="github" />
+      <option name="name" value="Proto GitHubPackages" />
+      <option name="url" value="https://maven.pkg.github.com/jpfin/api" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jpdemo.proto" />
       <option name="name" value="GitHub OWNER Apache Maven Packages" />
       <option name="url" value="https://maven.pkg.github.com/JPDemo/proto" />

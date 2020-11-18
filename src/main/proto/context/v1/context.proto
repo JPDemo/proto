@@ -11,7 +11,8 @@ import "google/protobuf/timestamp.proto";
 
 message MessageContext{
 
-  string origin = 1;
-  google.protobuf.Timestamp initiated = 2;
+  string requestId =1;
+  string origin = 2;
+  google.protobuf.Timestamp initiated = 3;
 
 }
